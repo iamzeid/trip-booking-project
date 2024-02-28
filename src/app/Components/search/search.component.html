@@ -1,0 +1,58 @@
+<form class="container mt-5" [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+        <input class="form-control col" formControlName="destination" placeholder="Destination">
+    </div>
+    <div class="row mt-2">
+        <input class="form-control col me-2" formControlName="minPrice" type="number" placeholder="Minimum Price">
+        <input class="form-control col me-2" formControlName="maxPrice" type="number" placeholder="Maximum Price">
+        <input class="form-control col me-2" formControlName="startDate" type="date" placeholder="Start Date">
+        <input class="form-control col" formControlName="endDate" type="date" placeholder="End Date">
+    </div>
+    <div class="row">
+        <button class="btn btn-primary w-100 mt-2 col" type="submit">Search</button>
+    </div>
+</form>
+
+<div class="container mt-5 mb-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="card rounded-3" *ngFor="let trip of trips">
+            <img class="card-img-top img-fluid me-2 mt-2 rounded-3" [src]="trip.cover" [alt]="trip.destination"
+                [title]="trip.destination">
+            <div class="card-body text-center">
+                <h5 class="card-title">
+                    {{ trip.destination }}
+                </h5>
+                <p class="card-text">
+                    From:
+                    <span class="badge bg-primary me-2">
+                        {{ trip.from }}
+                    </span>
+                    To:
+                    <span class="badge bg-primary">
+                        {{ trip.to }}
+                    </span>
+                </p>
+                <p class="text-center">
+                    {{ trip.description }}
+                </p>
+            </div>
+
+            <div class="card-footer">
+                <p class="card-text text-center">
+                    Price:
+                    <span class="badge bg-primary me-2">
+                        {{ trip.price }} EGP
+                    </span>
+                </p>
+
+                <!-- Route to trip/:id -->
+                <button [routerLink]="['/trip', trip.id]" class="btn btn-primary w-100">
+                    View Trip
+                </button>
+                <button class="btn btn-outline-primary w-100 mt-2">Add to Likes</button>
+
+            </div>
+
+        </div>
+    </div>
+</div>

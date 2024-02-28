@@ -8,6 +8,87 @@
         "displayName": "John Doe",
         "avatar": "avatar1.jpg"
       }
+    },
+    {
+      "id": 2,
+      "email": "user2@example.com",
+      "password": "hashed_password",
+      "profile": {
+        "displayName": "Alice Smith",
+        "avatar": "avatar2.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "email": "user3@example.com",
+      "password": "hashed_password",
+      "profile": {
+        "displayName": "Bob Johnson",
+        "avatar": "avatar3.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "email": "user4@example.com",
+      "password": "hashed_password",
+      "profile": {
+        "displayName": "Emma Brown",
+        "avatar": "avatar4.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "email": "user5@example.com",
+      "password": "hashed_password",
+      "profile": {
+        "displayName": "Michael Wilson",
+        "avatar": "avatar5.jpg"
+      }
+    },
+    {
+      "id": 6,
+      "email": "user6@example.com",
+      "password": "hashed_password",
+      "profile": {
+        "displayName": "Sophia Garcia",
+        "avatar": "avatar6.jpg"
+      }
+    },
+    {
+      "id": 7,
+      "email": "user7@example.com",
+      "password": "hashed_password",
+      "profile": {
+        "displayName": "William Rodriguez",
+        "avatar": "avatar7.jpg"
+      }
+    },
+    {
+      "id": 8,
+      "email": "user8@example.com",
+      "password": "hashed_password",
+      "profile": {
+        "displayName": "Olivia Martinez",
+        "avatar": "avatar8.jpg"
+      }
+    },
+    {
+      "id": 9,
+      "email": "user9@example.com",
+      "password": "hashed_password",
+      "profile": {
+        "displayName": "James Lee",
+        "avatar": "avatar9.jpg"
+      }
+    },
+    {
+      "id": 10,
+      "email": "user10@example.com",
+      "password": "hashed_password",
+      "profile": {
+        "displayName": "Sophie Jackson",
+        "avatar": "avatar10.jpg"
+      }
     }
   ],
   "trips": [
@@ -30,25 +111,266 @@
         "Day 4: Free day for relaxation",
         "Day 5: Departure from Sharm El-Sheikh"
       ],
-      "tags": [
-        "beach",
-        "sun",
-        "fun",
-        "relaxation"
-      ],
       "long": 34.2914,
       "lat": 29.9533,
       "from": "2024-04-01",
       "to": "2024-04-15",
       "price": 5000,
       "remainingSeats": 3,
-      "likedBy": [
-        1,
-        2
+      "likedBy": [1, 2],
+      "bookedBy": [1]
+    },
+    {
+      "id": 2,
+      "destination": "Tokyo",
+      "title": "Discover the vibrant city of Tokyo",
+      "description": "Experience the bustling streets, delicious cuisine, and rich culture of Tokyo.",
+      "cover": "https://placehold.co/600x400",
+      "gallery": [
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400"
       ],
-      "bookedBy": [
-        1
-      ]
+      "tourPlan": [
+        "Day 1: Arrival in Tokyo",
+        "Day 2: Visit to Tsukiji Fish Market",
+        "Day 3: Explore Shibuya Crossing",
+        "Day 4: Day trip to Mount Fuji",
+        "Day 5: Departure from Tokyo"
+      ],
+      "long": 139.6917,
+      "lat": 35.6895,
+      "from": "2024-05-01",
+      "to": "2024-05-10",
+      "price": 6000,
+      "remainingSeats": 5,
+      "likedBy": [],
+      "bookedBy": []
+    },
+    {
+      "id": 3,
+      "destination": "Paris",
+      "title": "A romantic getaway in Paris",
+      "description": "Enjoy the city of love with your loved one.",
+      "cover": "https://placehold.co/600x400",
+      "gallery": [
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400"
+      ],
+      "tourPlan": [
+        "Day 1: Arrival in Paris",
+        "Day 2: Visit to the Eiffel Tower",
+        "Day 3: Explore the Louvre Museum",
+        "Day 4: Day trip to Versailles",
+        "Day 5: Departure from Paris"
+      ],
+      "long": 2.3522,
+      "lat": 48.8566,
+      "from": "2024-06-01",
+      "to": "2024-06-10",
+      "price": 7000,
+      "remainingSeats": 2,
+      "likedBy": [],
+      "bookedBy": []
+    },
+    {
+      "id": 4,
+      "destination": "New York",
+      "title": "Explore the city that never sleeps",
+      "description": "Discover the vibrant city of New York.",
+      "cover": "https://placehold.co/600x400",
+      "gallery": [
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400"
+      ],
+      "tourPlan": [
+        "Day 1: Arrival in New York",
+        "Day 2: Visit to the Statue of Liberty",
+        "Day 3: Explore Central Park",
+        "Day 4: Day trip to Niagara Falls",
+        "Day 5: Departure from New York"
+      ],
+      "long": 74.006,
+      "lat": 40.7128,
+      "from": "2024-07-01",
+      "to": "2024-07-10",
+      "price": 8000,
+      "remainingSeats": 4,
+      "likedBy": [],
+      "bookedBy": []
+    },
+    {
+      "id": 5,
+      "destination": "Cape Town",
+      "title": "A trip to remember in Cape Town",
+      "description": "Experience the beauty of Cape Town.",
+      "cover": "https://placehold.co/600x400",
+      "gallery": [
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400"
+      ],
+      "tourPlan": [
+        "Day 1: Arrival in Cape Town",
+        "Day 2: Visit to Table Mountain",
+        "Day 3: Explore the Cape Winelands",
+        "Day 4: Day trip to Robben Island",
+        "Day 5: Departure from Cape Town"
+      ],
+      "long": 18.4241,
+      "lat": 33.9249,
+      "from": "2024-08-01",
+      "to": "2024-08-10",
+      "price": 9000,
+      "remainingSeats": 3,
+      "likedBy": [],
+      "bookedBy": []
+    },
+    {
+      "id": 6,
+      "destination": "Rio de Janeiro",
+      "title": "Discover the vibrant city of Rio de Janeiro",
+      "description": "Experience the bustling streets, delicious cuisine, and rich culture of Rio de Janeiro.",
+      "cover": "https://placehold.co/600x400",
+      "gallery": [
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400"
+      ],
+      "tourPlan": [
+        "Day 1: Arrival in Rio de Janeiro",
+        "Day 2: Visit to Christ the Redeemer",
+        "Day 3: Explore Copacabana Beach",
+        "Day 4: Day trip to Tijuca National Park",
+        "Day 5: Departure from Rio de Janeiro"
+      ],
+      "long": 43.1729,
+      "lat": 22.9068,
+      "from": "2024-09-01",
+      "to": "2024-09-10",
+      "price": 10000,
+      "remainingSeats": 5,
+      "likedBy": [],
+      "bookedBy": []
+    },
+    {
+      "id": 7,
+      "destination": "Marrakech",
+      "title": "A trip to remember in Marrakech",
+      "description": "Experience the beauty of Marrakech.",
+      "cover": "https://placehold.co/600x400",
+      "gallery": [
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400"
+      ],
+      "tourPlan": [
+        "Day 1: Arrival in Marrakech",
+        "Day 2: Visit to Jardin Majorelle",
+        "Day 3: Explore the Medina of Marrakech",
+        "Day 4: Day trip to the Atlas Mountains",
+        "Day 5: Departure from Marrakech"
+      ],
+      "long": 7.5886,
+      "lat": 31.6295,
+      "from": "2024-10-01",
+      "to": "2024-10-10",
+      "price": 11000,
+      "remainingSeats": 4,
+      "likedBy": [],
+      "bookedBy": []
+    },
+    {
+      "id": 8,
+      "destination": "Sydney",
+      "title": "Discover the vibrant city of Sydney",
+      "description": "Experience the bustling streets, delicious cuisine, and rich culture of Sydney.",
+      "cover": "https://placehold.co/600x400",
+      "gallery": [
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400"
+      ],
+      "tourPlan": [
+        "Day 1: Arrival in Sydney",
+        "Day 2: Visit to Sydney Opera House",
+        "Day 3: Explore Bondi Beach",
+        "Day 4: Day trip to Blue Mountains",
+        "Day 5: Departure from Sydney"
+      ],
+      "long": 151.2093,
+      "lat": 33.8688,
+      "from": "2024-11-01",
+      "to": "2024-11-10",
+      "price": 12000,
+      "remainingSeats": 3,
+      "likedBy": [],
+      "bookedBy": []
+    },
+    {
+      "id": 9,
+      "destination": "Bali",
+      "title": "A trip to remember in Bali",
+      "description": "Experience the beauty of Bali.",
+      "cover": "https://placehold.co/600x400",
+      "gallery": [
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400"
+      ],
+      "tourPlan": [
+        "Day 1: Arrival in Bali",
+        "Day 2: Visit to Ubud Monkey Forest",
+        "Day 3: Explore the Tegallalang Rice Terraces",
+        "Day 4: Day trip to Nusa Penida",
+        "Day 5: Departure from Bali"
+      ],
+      "long": 115.1889,
+      "lat": 8.3405,
+      "from": "2024-12-01",
+      "to": "2024-12-10",
+      "price": 13000,
+      "remainingSeats": 2,
+      "likedBy": [],
+      "bookedBy": []
+    },
+    {
+      "id": 10,
+      "destination": "Dubai",
+      "title": "Discover the vibrant city of Dubai",
+      "description": "Experience the bustling streets, delicious cuisine, and rich culture of Dubai.",
+      "cover": "https://placehold.co/600x400",
+      "gallery": [
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400",
+        "https://placehold.co/600x400"
+      ],
+      "tourPlan": [
+        "Day 1: Arrival in Dubai",
+        "Day 2: Visit to Burj Khalifa",
+        "Day 3: Explore the Dubai Mall",
+        "Day 4: Day trip to the Dubai Desert",
+        "Day 5: Departure from Dubai"
+      ],
+      "long": 55.2708,
+      "lat": 25.2048,
+      "from": "2025-01-01",
+      "to": "2025-01-10",
+      "price": 14000,
+      "remainingSeats": 1,
+      "likedBy": [],
+      "bookedBy": []
     }
   ],
   "bookings": [
@@ -56,13 +378,67 @@
       "id": 1,
       "userId": 1,
       "tripId": 1,
+      "bookedSeats": 2,
+      "totalPrice": 10000
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "tripId": 1,
+      "bookedSeats": 1,
+      "totalPrice": 5000
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "tripId": 2,
+      "bookedSeats": 3,
+      "totalPrice": 18000
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "tripId": 2,
+      "bookedSeats": 2,
+      "totalPrice": 12000
+    },
+    {
+      "id": 5,
+      "userId": 5,
+      "tripId": 3,
+      "bookedSeats": 1,
+      "totalPrice": 7000
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "tripId": 3,
+      "bookedSeats": 2,
+      "totalPrice": 14000
+    },
+    {
+      "id": 7,
+      "userId": 7,
+      "tripId": 4,
+      "bookedSeats": 1
+    },
+    {
+      "id": 8,
+      "userId": 8,
+      "tripId": 4,
+      "bookedSeats": 3
+    },
+    {
+      "id": 9,
+      "userId": 9,
+      "tripId": 5,
       "bookedSeats": 2
     },
     {
-      "userId": 1,
-      "tripId": 1,
-      "bookedSeats": 2,
-      "id": 2
+      "id": 10,
+      "userId": 10,
+      "tripId": 5,
+      "bookedSeats": 1
     }
   ]
 }
