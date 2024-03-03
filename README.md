@@ -16,7 +16,7 @@ It is a platform for booking trips and tours, where users can view available tri
 
 ## Technologies
 
-- Angular 17
+- Angular
 - Node.js
 - Express
 - JSON Server
