@@ -96,13 +96,13 @@
       "id": 1,
       "destination": "Sharm El-Sheikh",
       "title": "A trip to remember in Sharm El-Sheikh",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nunc nec nunc tincidunt lacinia nec nec nunc. ",
-      "cover": "https://placehold.co/600x400",
+      "description": "Experience the beauty of Sharm El-Sheikh. Enjoy the beautiful beaches, clear waters, and vibrant marine life.",
+      "cover": "assets/images/sharm5.jpeg",
       "gallery": [
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400"
+        "assets/images/sharm2.jpg",
+        "assets/images/sharm1.jpg",
+        "assets/images/sharm4.jpg",
+        "assets/images/sharm5.jpeg"
       ],
       "tourPlan": [
         "Day 1: Arrival at Sharm El-Sheikh",
@@ -111,26 +111,30 @@
         "Day 4: Free day for relaxation",
         "Day 5: Departure from Sharm El-Sheikh"
       ],
-      "long": 34.2914,
-      "lat": 29.9533,
-      "from": "2024-04-01",
-      "to": "2024-04-15",
+      "long": 34.3088,
+      "lat": 27.9158,
+      "startDate": "2024-04-01",
+      "endDate": "2024-04-15",
       "price": 5000,
-      "remainingSeats": 3,
-      "likedBy": [1, 2],
-      "bookedBy": [1]
+      "remainingSeats": 8,
+      "likedBy": [
+        1
+      ],
+      "bookedBy": [
+        1
+      ]
     },
     {
       "id": 2,
       "destination": "Tokyo",
       "title": "Discover the vibrant city of Tokyo",
       "description": "Experience the bustling streets, delicious cuisine, and rich culture of Tokyo.",
-      "cover": "https://placehold.co/600x400",
+      "cover": "assets/images/tokyo1.jpg",
       "gallery": [
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400"
+        "assets/images/tokyo2.jpg",
+        "assets/images/tokyo3.jpg",
+        "assets/images/tokyo4.jpg",
+        "assets/images/tokyo5.jpg"
       ],
       "tourPlan": [
         "Day 1: Arrival in Tokyo",
@@ -141,11 +145,13 @@
       ],
       "long": 139.6917,
       "lat": 35.6895,
-      "from": "2024-05-01",
-      "to": "2024-05-10",
+      "startDate": "2024-05-01",
+      "endDate": "2024-05-10",
       "price": 6000,
       "remainingSeats": 5,
-      "likedBy": [],
+      "likedBy": [
+        1
+      ],
       "bookedBy": []
     },
     {
@@ -153,12 +159,12 @@
       "destination": "Paris",
       "title": "A romantic getaway in Paris",
       "description": "Enjoy the city of love with your loved one.",
-      "cover": "https://placehold.co/600x400",
+      "cover": "assets/images/paris1.jpg",
       "gallery": [
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400"
+        "assets/images/paris2.jpg",
+        "assets/images/paris3.jpg",
+        "assets/images/paris4.jpg",
+        "assets/images/paris5.jpg"
       ],
       "tourPlan": [
         "Day 1: Arrival in Paris",
@@ -169,10 +175,10 @@
       ],
       "long": 2.3522,
       "lat": 48.8566,
-      "from": "2024-06-01",
-      "to": "2024-06-10",
+      "startDate": "2024-06-01",
+      "endDate": "2024-06-10",
       "price": 7000,
-      "remainingSeats": 2,
+      "remainingSeats": 6,
       "likedBy": [],
       "bookedBy": []
     },
@@ -181,12 +187,12 @@
       "destination": "New York",
       "title": "Explore the city that never sleeps",
       "description": "Discover the vibrant city of New York.",
-      "cover": "https://placehold.co/600x400",
+      "cover": "assets/images/new1.jpg",
       "gallery": [
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400"
+        "assets/images/new2.jpg",
+        "assets/images/new3.jpg",
+        "assets/images/new4.jpg",
+        "assets/images/new5.jpg"
       ],
       "tourPlan": [
         "Day 1: Arrival in New York",
@@ -197,10 +203,10 @@
       ],
       "long": 74.006,
       "lat": 40.7128,
-      "from": "2024-07-01",
-      "to": "2024-07-10",
+      "startDate": "2024-07-01",
+      "endDate": "2024-07-10",
       "price": 8000,
-      "remainingSeats": 4,
+      "remainingSeats": 7,
       "likedBy": [],
       "bookedBy": []
     },
@@ -209,12 +215,12 @@
       "destination": "Cape Town",
       "title": "A trip to remember in Cape Town",
       "description": "Experience the beauty of Cape Town.",
-      "cover": "https://placehold.co/600x400",
+      "cover": "assets/images/cape1.jpg",
       "gallery": [
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400"
+        "assets/images/cape2.jpg",
+        "assets/images/cape3.jpg",
+        "assets/images/cape4.jpg",
+        "assets/images/cape5.jpg"
       ],
       "tourPlan": [
         "Day 1: Arrival in Cape Town",
@@ -225,10 +231,10 @@
       ],
       "long": 18.4241,
       "lat": 33.9249,
-      "from": "2024-08-01",
-      "to": "2024-08-10",
+      "startDate": "2024-08-01",
+      "endDate": "2024-08-10",
       "price": 9000,
-      "remainingSeats": 3,
+      "remainingSeats": 8,
       "likedBy": [],
       "bookedBy": []
     },
@@ -237,12 +243,12 @@
       "destination": "Rio de Janeiro",
       "title": "Discover the vibrant city of Rio de Janeiro",
       "description": "Experience the bustling streets, delicious cuisine, and rich culture of Rio de Janeiro.",
-      "cover": "https://placehold.co/600x400",
+      "cover": "assets/images/rio1.jpg",
       "gallery": [
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400"
+        "assets/images/rio2.jpg",
+        "assets/images/rio5.jpg",
+        "assets/images/rio4.jpg",
+        "assets/images/rio3.jpg"
       ],
       "tourPlan": [
         "Day 1: Arrival in Rio de Janeiro",
@@ -253,10 +259,10 @@
       ],
       "long": 43.1729,
       "lat": 22.9068,
-      "from": "2024-09-01",
-      "to": "2024-09-10",
+      "startDate": "2024-09-01",
+      "endDate": "2024-09-10",
       "price": 10000,
-      "remainingSeats": 5,
+      "remainingSeats": 9,
       "likedBy": [],
       "bookedBy": []
     },
@@ -265,12 +271,12 @@
       "destination": "Marrakech",
       "title": "A trip to remember in Marrakech",
       "description": "Experience the beauty of Marrakech.",
-      "cover": "https://placehold.co/600x400",
+      "cover": "assets/images/mar1.jpg",
       "gallery": [
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400"
+        "assets/images/mar2.jpg",
+        "assets/images/mar3.jpg",
+        "assets/images/mar4.jpg",
+        "assets/images/mar5.jpg"
       ],
       "tourPlan": [
         "Day 1: Arrival in Marrakech",
@@ -281,10 +287,10 @@
       ],
       "long": 7.5886,
       "lat": 31.6295,
-      "from": "2024-10-01",
-      "to": "2024-10-10",
+      "startDate": "2024-10-01",
+      "endDate": "2024-10-10",
       "price": 11000,
-      "remainingSeats": 4,
+      "remainingSeats": 6,
       "likedBy": [],
       "bookedBy": []
     },
@@ -293,12 +299,12 @@
       "destination": "Sydney",
       "title": "Discover the vibrant city of Sydney",
       "description": "Experience the bustling streets, delicious cuisine, and rich culture of Sydney.",
-      "cover": "https://placehold.co/600x400",
+      "cover": "assets/images/syd1.jpg",
       "gallery": [
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400"
+        "assets/images/syd2.jpg",
+        "assets/images/syd3.jpg",
+        "assets/images/syd4.jpg",
+        "assets/images/syd5.jpg"
       ],
       "tourPlan": [
         "Day 1: Arrival in Sydney",
@@ -309,10 +315,10 @@
       ],
       "long": 151.2093,
       "lat": 33.8688,
-      "from": "2024-11-01",
-      "to": "2024-11-10",
+      "startDate": "2024-11-01",
+      "endDate": "2024-11-10",
       "price": 12000,
-      "remainingSeats": 3,
+      "remainingSeats": 8,
       "likedBy": [],
       "bookedBy": []
     },
@@ -321,12 +327,12 @@
       "destination": "Bali",
       "title": "A trip to remember in Bali",
       "description": "Experience the beauty of Bali.",
-      "cover": "https://placehold.co/600x400",
+      "cover": "assets/images/Bali1.jpg",
       "gallery": [
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400"
+        "assets/images/Bali2.jpg",
+        "assets/images/Bali3.jpg",
+        "assets/images/Bali4.jpg",
+        "assets/images/Bali5.jpg"
       ],
       "tourPlan": [
         "Day 1: Arrival in Bali",
@@ -337,10 +343,10 @@
       ],
       "long": 115.1889,
       "lat": 8.3405,
-      "from": "2024-12-01",
-      "to": "2024-12-10",
+      "startDate": "2024-12-01",
+      "endDate": "2024-12-10",
       "price": 13000,
-      "remainingSeats": 2,
+      "remainingSeats": 7,
       "likedBy": [],
       "bookedBy": []
     },
@@ -349,12 +355,12 @@
       "destination": "Dubai",
       "title": "Discover the vibrant city of Dubai",
       "description": "Experience the bustling streets, delicious cuisine, and rich culture of Dubai.",
-      "cover": "https://placehold.co/600x400",
+      "cover": "assets/images/Dubai1.jpg",
       "gallery": [
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400",
-        "https://placehold.co/600x400"
+        "assets/images/Dubai2.jpg",
+        "assets/images/Dubai3.jpg",
+        "assets/images/Dubai4.jpg",
+        "assets/images/Dubai5.jpg"
       ],
       "tourPlan": [
         "Day 1: Arrival in Dubai",
@@ -365,10 +371,10 @@
       ],
       "long": 55.2708,
       "lat": 25.2048,
-      "from": "2025-01-01",
-      "to": "2025-01-10",
+      "startDate": "2025-01-01",
+      "endDate": "2025-01-10",
       "price": 14000,
-      "remainingSeats": 1,
+      "remainingSeats": 4,
       "likedBy": [],
       "bookedBy": []
     }
@@ -378,67 +384,13 @@
       "id": 1,
       "userId": 1,
       "tripId": 1,
-      "bookedSeats": 2,
-      "totalPrice": 10000
-    },
-    {
-      "id": 2,
-      "userId": 2,
-      "tripId": 1,
-      "bookedSeats": 1,
-      "totalPrice": 5000
-    },
-    {
-      "id": 3,
-      "userId": 3,
-      "tripId": 2,
-      "bookedSeats": 3,
-      "totalPrice": 18000
-    },
-    {
-      "id": 4,
-      "userId": 4,
-      "tripId": 2,
-      "bookedSeats": 2,
-      "totalPrice": 12000
-    },
-    {
-      "id": 5,
-      "userId": 5,
-      "tripId": 3,
-      "bookedSeats": 1,
-      "totalPrice": 7000
-    },
-    {
-      "id": 6,
-      "userId": 6,
-      "tripId": 3,
-      "bookedSeats": 2,
-      "totalPrice": 14000
-    },
-    {
-      "id": 7,
-      "userId": 7,
-      "tripId": 4,
-      "bookedSeats": 1
-    },
-    {
-      "id": 8,
-      "userId": 8,
-      "tripId": 4,
-      "bookedSeats": 3
-    },
-    {
-      "id": 9,
-      "userId": 9,
-      "tripId": 5,
-      "bookedSeats": 2
-    },
-    {
-      "id": 10,
-      "userId": 10,
-      "tripId": 5,
-      "bookedSeats": 1
+      "destination": "Sharm El-Sheikh",
+      "startDate": "2024-04-01",
+      "endDate": "2024-04-15",
+      "price": 5000,
+      "bookedBy": [
+        1
+      ]
     }
   ]
 }

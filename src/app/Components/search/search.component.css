@@ -1,0 +1,34 @@
+.form {
+    background-color: rgb(235, 232, 232);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+
+}
+
+input {
+    background-color: #f7f7f7;
+}
+
+.bg {
+    background-color: #d1c5c5;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+}
+
+.animate {
+    animation: slideInFromLeft 2s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

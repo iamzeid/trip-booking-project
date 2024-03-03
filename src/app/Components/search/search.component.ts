@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { TripsService } from '../../Services/search.service';
 import { NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { TripService } from '../../Services/trip.service';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css'],
-  providers: [TripsService],
+  providers: [TripService],
   standalone: true,
   imports: [
     ReactiveFormsModule,
@@ -19,11 +19,11 @@ import { RouterLink } from '@angular/router';
 
 export class SearchComponent implements OnInit {
   searchForm: FormGroup;
-  trips:any = [];
+  trips: any = [];
 
   constructor(
     private formBuilder: FormBuilder,
-    private tripsService: TripsService
+    private TripService: TripService
   ) {
     this.searchForm = this.formBuilder.group({
       destination: '',
@@ -35,13 +35,13 @@ export class SearchComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.tripsService.getTrips().subscribe(data => {
+    this.TripService.getAllTrips().subscribe(data => {
       this.trips = data;
     });
   }
 
   onSubmit(): void {
-    this.tripsService.getTrips().subscribe(data => {
+    this.TripService.getAllTrips().subscribe(data => {
       const filters = this.searchForm.value;
 
       this.trips = data.filter((trip: any) => {
@@ -76,4 +76,5 @@ export class SearchComponent implements OnInit {
 
     });
   }
+
 }

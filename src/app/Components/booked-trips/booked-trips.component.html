@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <h1 class="text-dark mb-3 text-center">Your Booked Trips</h1>
+
+  <div *ngIf="bookedTrips.length === 0" class="alert alert-dark text-center">
+    You have not booked any trips yet.
+  </div>
+  <div class="card-group">
+    <div *ngFor="let trip of bookedTrips" class="card bg">
+      <div class="card-header">
+        <h5 class="card-title">{{ trip?.destination }}</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Start Date: {{ trip?.startDate }}</p>
+        <p class="card-text">End Date: {{ trip?.endDate }}</p>
+        <p class="card-text">Seats Booked: {{ bookedSeats }}</p>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-dark w-100" [routerLink]="['/trip', trip?.id]">Show Details</button>
+      </div>
+    </div>
+  </div>
+</div>

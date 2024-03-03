@@ -1,0 +1,61 @@
+<div class="nav back-ground">
+  <div class="container w-100 py-3 ">
+    <nav class="navbar navbar-expand-lg   ">
+      <div class="container">
+        <a class="navbar-brand ass fw-bold text-white" href="#">GoTravell </a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active  text-white me-3 fs-6" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  tt text-white me-3 fs-6" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3 fs-6" href="#ser">Destination</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white me-3 fs-6" href="#test">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3 fs-6" href="#blo">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3 fs-6" href="#cont">Contact Us</a>
+            </li>
+            <!-- 
+            <div *ngIf="!getUser().uid">
+              <li class="nav-item">
+                <a class="nav-link text-white me-3 fs-6" href="/profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white me-3 fs-6" href="/logout">Logout</a>
+              </li>
+            </div> -->
+
+            <div *ngIf="!getUser().uid">
+              <li class="nav-item">
+                <a class="btn btn-outline-light" href="/profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-light" href="/logout">Logout</a>
+              </li>
+            </div>
+
+            <div *ngIf="getUser().uid">
+              <a class="btn btn-outline-light" href="/profile">Profile</a>
+            </div>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</div>

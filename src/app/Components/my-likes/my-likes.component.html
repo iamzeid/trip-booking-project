@@ -1,0 +1,10 @@
+<div class="container mt-5 mb-5">
+    <h1 class="text-center mb-3">My Likes</h1>
+    <div class="card" *ngFor="let trip of trips">
+        <div class="card-body" *ngIf="trip.likedBy.includes(userId)">
+            <h5 class="card-title">{{trip.title}}</h5>
+            <p class="card-text">{{trip.description}}</p>
+            <a [routerLink]="['/trip', trip.id]" class="btn btn-dark w-100">View Trip</a>
+        </div>
+    </div>
+</div>

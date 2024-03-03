@@ -1,58 +1,146 @@
-<form class="container mt-5" [formGroup]="searchForm" (ngSubmit)="onSubmit()">
-    <div class="row">
-        <input class="form-control col" formControlName="destination" placeholder="Destination">
-    </div>
-    <div class="row mt-2">
-        <input class="form-control col me-2" formControlName="minPrice" type="number" placeholder="Minimum Price">
-        <input class="form-control col me-2" formControlName="maxPrice" type="number" placeholder="Maximum Price">
-        <input class="form-control col me-2" formControlName="startDate" type="date" placeholder="Start Date">
-        <input class="form-control col" formControlName="endDate" type="date" placeholder="End Date">
-    </div>
-    <div class="row">
-        <button class="btn btn-primary w-100 mt-2 col" type="submit">Search</button>
-    </div>
-</form>
+<div class="">
+    
+    <form class="container shadow form p-3 rounded-2 mt-4" [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+       
+            
+       
+    
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="destination" class="form-label">Destination </label>
+                <input class="form-control w-100" type="text" id="destination" formControlName="destination" placeholder="Enter your destination">
+            </div>
+    
+            <div class="col-md-6 mb-3">
+                <label for="minPrice" class="form-label">Price Range</label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input class="form-control w-100 rounded-end mb-4" type="number" id="minPrice" formControlName="minPrice" placeholder="Min Price">
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-control w-100 rounded-start" type="number" id="maxPrice" formControlName="maxPrice" placeholder="Max Price">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="startDate" class="form-label">Start Date</label>
+                <input class="form-control w-100" type="date" id="startDate" formControlName="startDate">
+            </div>
+    
+            <div class="col-md-6 mb-3">
+                <label for="endDate" class="form-label">End Date</label>
+                <input class="form-control w-100" type="date" id="endDate" formControlName="endDate">
+            </div>
+        </div>
+    
+        <div class="row mt-3">
+            <div class="col-12 d-flex justify-content-center">
+                <button class="btn btn-dark px-4 w-100" type="submit">Search </button>
+            </div>
+        </div>
+        
+    </form>
+    
+      
+</div>
 
-<div class="container mt-5 mb-5">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="card rounded-3" *ngFor="let trip of trips">
+ <!-- <div class="container mt-5 mb-5  ">
+    <div class="row row-cols-1 row-cols-md-3  g-4">
+        <div class=" card rounded-3  " *ngFor="let trip of trips">
+            
             <img class="card-img-top img-fluid me-2 mt-2 rounded-3" [src]="trip.cover" [alt]="trip.destination"
                 [title]="trip.destination">
-            <div class="card-body text-center">
-                <h5 class="card-title">
+            <div class="card-body ">
+                <h4 class="card-title">
                     {{ trip.destination }}
-                </h5>
+                </h4>
                 <p class="card-text">
                     From:
-                    <span class="badge bg-primary me-2">
+                    <span class="badge bg-dark me-2">
                         {{ trip.from }}
                     </span>
                     To:
-                    <span class="badge bg-primary">
+                    <span class="badge bg-dark">
                         {{ trip.to }}
                     </span>
                 </p>
-                <p class="text-center">
+                <p class="">
                     {{ trip.description }}
                 </p>
             </div>
 
             <div class="card-footer">
-                <p class="card-text text-center">
+                <p class="card-text ">
                     Price:
-                    <span class="badge bg-primary me-2">
+                    <span class="badge bg-dark me-2">
                         {{ trip.price }} EGP
                     </span>
-                </p>
+                </p> -->
 
-                <!-- Route to trip/:id -->
-                <button [routerLink]="['/trip', trip.id]" class="btn btn-primary w-100">
+                <!-- Route to trip/:id  -->
+                 <!-- <button [routerLink]="['/trip', trip.id]" class="btn bg w-100">
                     View Trip
                 </button>
-                <button class="btn btn-outline-primary w-100 mt-2">Add to Likes</button>
+                <button class="btn btn-outline-dark w-100 mt-2">Add to Likes</button>
 
             </div>
-
+        
         </div>
     </div>
-</div>
+</div>  -->
+
+
+   
+    
+     <div class=" container py-3">
+        <div class="row ">
+            <div class=" col-md-4 p-3" *ngFor="let trip of trips">
+               
+            <div class=" shadow bg-white animate rounded-4 p-3 " >
+               
+                <img class="card-img-top img-fluid me-2 mt-2 w-100 rounded-3" [src]="trip.cover" [alt]="trip.destination"
+                [title]="trip.destination">
+                <div class="mt-2 ">
+                    <h4 class="card-title text-center">
+                        {{ trip.destination }}
+                    </h4>
+                    <p class="mt-1 text-center">
+                        From:
+                        <span class="badge bg-dark me-2">
+                            {{ trip.startDate }}
+                        </span>
+                        To:
+                        <span class="badge bg-dark">
+                            {{ trip.endDate }}
+                        </span>
+                    </p>
+                    <p class="">
+                        {{ trip.description }}
+                    </p>
+                </div>
+    
+                <div class="">
+                    <p class="text-center">
+                        Price:
+                        <span class="badge bg-dark me-2">
+                            {{ trip.price }} EGP
+                        </span>
+                    </p>
+    
+                      <!-- Route to trip/:id   -->
+                      <div class="d-flex">
+                        <button [routerLink]="['/trip', trip.id]" class="btn bg me-2 w-100">
+                            View Trip
+                        </button>
+                      </div>
+                     
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>   

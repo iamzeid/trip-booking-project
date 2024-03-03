@@ -1,0 +1,252 @@
+.slides img {
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+}
+
+.slides {
+
+  position: relative;
+
+}
+
+.slides .contents {
+
+  background-color: rgba(19, 17, 17, 0.592);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.slides .content {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  width: 50%;
+  color: white;
+  bottom: -100%;
+  text-align: center;
+  animation: showUp 3s ease-in-out forwards;
+  /* Animation properties */
+}
+
+
+
+@keyframes showUp {
+  from {
+    opacity: 0;
+    /* Start transparent */
+    transform: translateY(100%);
+    /* Start off-screen bottom */
+  }
+
+  to {
+    opacity: 1;
+    /* End fully visible */
+    transform: translateY(0);
+    /* End in original position */
+  }
+}
+
+.slides .content h1 {
+  font-weight: 900;
+  font-size: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  /* For small screens (less than 768px) */
+  .slides .content h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+  /* For medium screens (between 768px and 1200px) */
+  .slides .content h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  /* For large screens (more than 1200px) */
+  .slides .content h1 {
+    font-size: 2.8rem;
+  }
+}
+
+
+
+
+/* section2 */
+.about h2 {
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(102, 97, 97);
+}
+
+.about p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about .image-container {
+  overflow: hidden;
+}
+
+.about img {
+  border-radius: 10px;
+}
+
+/* section3 */
+
+.portfolio .nav-link {
+  position: relative;
+}
+
+
+
+
+.protfolio-item {
+  position: relative;
+
+
+}
+
+.portfolio img {
+  border-radius: 10px;
+}
+
+.protfolio-layer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.926);
+  opacity: 0;
+  transition: all 1s;
+
+}
+
+.protfolio-item:hover .protfolio-layer {
+  opacity: 1;
+
+}
+
+.protfolio-item:hover {
+
+  border: #9f9898df 5px solid;
+  border-radius: 15px;
+}
+
+.i-protfolio .w-10,
+.h-10 {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+}
+
+.nav-pills .nav-link {
+  color: black;
+  font-weight: bold;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: black;
+  background-color: white;
+}
+
+/* section4 */
+
+.Testimonials .w-20,
+.h-20 {
+  width: 120px;
+  height: 120px;
+}
+
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  background-color: grey;
+  width: 12px;
+  height: 12px;
+
+}
+
+
+/* section5 */
+
+.Blog {
+  background-color: #f7f7f7 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Blog .div-image {
+  overflow: hidden;
+}
+
+.Blog img {
+  transition: all 1s;
+  border-radius: 10px;
+}
+
+.Blog img:hover {
+  transform: scale(1.2);
+}
+
+.Blog .carousel-inner .bg-white {
+  border-radius: 10px;
+}
+
+/* section6      */
+.Contact .icon {
+
+  background-color: #d4cdcd !important;
+  transition: all 0.5s;
+}
+
+.Contact .icon:hover {
+  background-color: black;
+  color: white;
+}
+
+.Contact .w-40,
+.h40 {
+  width: 60px;
+  height: 60px;
+}
+
+.Contact .w-60 {
+  width: 65%;
+}
+
+.Contact input {
+  background-color: #f7f7f7 !important;
+}
+
+.Contact textarea {
+  height: 200px !important;
+  background-color: #f7f7f7 !important;
+}
+
+.Contact .w-15 {
+  width: 130px;
+  background-color: black;
+  color: white;
+  transition: all 1s;
+}
+
+.Contact .w-15:hover {
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Registration Form</h2>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" #email placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" class="form-control" id="password" #password placeholder="Enter password">
+  </div>
+  <input (click)="register(email.value, password.value)" type="submit" class="btn btn-primary"  value="Register" >
+</div>

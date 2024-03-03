@@ -1,0 +1,27 @@
+<div *ngIf="trip" class="card bg m-5">
+  <div class="card-header text-center">
+    <h5>Book a Trip</h5>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title text-center">Book your next trip to {{ trip.destination }}</h2>
+    <p class="card-text">Price: {{ trip.price }} EGP</p>
+    <p class="card-text">Remaining Seats: {{ trip.remainingSeats }}</p>
+
+    <div class="form-group row">
+      <div class="col-xs-3">
+        <label class="form-label" for="seats">Number of Seats to Book:</label>
+        <input type="number" id="seats" class="form-control" [(ngModel)]="seatsToBook" min="1"
+          max="{{ trip.remainingSeats }}" value="1" />
+      </div>
+    </div>
+
+    <br />
+
+    <div *ngIf="errorMessage" class="alert alert-danger">
+      {{ errorMessage }}
+    </div>
+
+    <button class="btn btn-dark w-100" (click)="bookSeats()" [disabled]="seatsToBook > trip.remainingSeats">Book
+      Seats</button>
+  </div>
+</div>
